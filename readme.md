@@ -1,8 +1,7 @@
 # Local DeepSeek R1 (1.5) ile RAG
 
 Bu proje Streamlit tabanlı bir Retrieval-Augmented Generation (RAG) basit bir uygulaması. 
-Sistem, belgelerden ilgili bölümleri alır ve local DeepSeek R1 modeli ile kısa ve öz yanıtlar verir.
-
+Sistem, belgelerden ilgili bölümleri alır ve local DeepSeek R1 modeli ile yanıt verir.
 ## Kurulum
 
 ### Gereksinimler

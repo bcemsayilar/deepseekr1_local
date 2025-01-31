@@ -2,8 +2,16 @@
 
 Bu proje Streamlit tabanlı bir Retrieval-Augmented Generation (RAG) basit bir uygulaması. 
 Sistem, belgelerden ilgili bölümleri alır ve local DeepSeek R1 modeli ile yanıt verir.
-## Kurulum
 
+## Proje Yapısı
+
+```
+.
+├── app.py          #  Ana Streamlit uygulaması
+├── rag.py          #  RAG
+├── requirements.txt # Bağımlılık listesi
+```
+## Kurulum
 ### Gereksinimler
 
 Aşağıdaki bileşenlerin sisteminizde kurulu olduğundan emin olun:
@@ -16,8 +24,8 @@ Aşağıdaki bileşenlerin sisteminizde kurulu olduğundan emin olun:
 
 ```bash
 # Depoyu klonlayın
-git clone https://github.com/your-repo/RAG-PDF-DeepSeek.git
-cd RAG-PDF-DeepSeek
+git clone https://github.com/bcemsayilar/deepseekr1_local
+cd deepseekr1_local
 
 # Sanal ortam oluşturun (isteğe bağlı ancak önerilir)
 python3 -m venv venv
@@ -34,6 +42,7 @@ Eğer macOS kullanıyorsanız, DeepSeek modellerini çalıştırmak için `Ollam
 ```bash
 brew install ollama  # Ollama'yı yükleyin
 ollama pull deepseek-r1:1.5b  # Gerekli modeli indirin
+ollama run deepseek-r1:1.5b
 ```
 
 ## Uygulamayı localde Çalıştırma
@@ -51,15 +60,6 @@ Bu komut local bir web sunucusu başlatacak ve tarayıcıda kullanıcı arayüz�
 1. **PDF Yükleyin:** PDF dosyanızı sürükleyip bırakın veya seçerek yükleyin.
 2. **Soru Sorun:** Giriş kutusuna bir soru yazın.
 3. **Yanıt Alın:** Sistem, belgeden ilgili bölümleri alır ve kısa yanıtlar sunar.
-
-## Proje Yapısı
-
-```
-.
-├── app.py          #  Ana Streamlit uygulaması
-├── rag.py          #  RAG
-├── requirements.txt # Bağımlılık listesi
-```
 
 ## Katkıda Bulunma
 
